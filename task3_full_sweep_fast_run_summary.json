@@ -1,0 +1,1079 @@
+{
+  "mode": "full_sweep_fast",
+  "total_minutes": 10.074765640000017,
+  "cell_minutes": {
+    "cuda_check": 0.0006726366666650089,
+    "load_notebook_definitions": 8.961999992607161e-05,
+    "instantiate_datasets": 0.018089043333020527,
+    "preload_train_all_to_gpu": 1.7187094516664123,
+    "preload_test_all_to_gpu": 0.8259127849999156,
+    "build_scenarios": 0.0023541183332175327,
+    "evaluate_task2_baseline_fast": 0.06768283000031564,
+    "train_eval_alpha_0.25": 2.485668405000373,
+    "train_eval_alpha_0.50": 2.474026003332983,
+    "train_eval_alpha_1.00": 2.48014357000017
+  },
+  "best_metadata": {
+    "run_mode": "full_sweep_fast",
+    "alpha": 0.25,
+    "k": 1,
+    "epochs": 15,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "selection_score": [
+      2.0,
+      2.0,
+      1.0
+    ],
+    "optimization": "preloaded GPU tensors, one train/test embedding pass per model, one topk(max_k) per scenario"
+  },
+  "best_result_bundle": [
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    }
+  ],
+  "best_training_history": [
+    {
+      "epoch": 1,
+      "total_loss": 0.2608301043510437,
+      "item_loss": 0.1443534791469574,
+      "family_loss": 0.4659058153629303
+    },
+    {
+      "epoch": 2,
+      "total_loss": 0.17021693289279938,
+      "item_loss": 0.08217698335647583,
+      "family_loss": 0.3521594703197479
+    },
+    {
+      "epoch": 3,
+      "total_loss": 0.1345326155424118,
+      "item_loss": 0.0651990994811058,
+      "family_loss": 0.277334064245224
+    },
+    {
+      "epoch": 4,
+      "total_loss": 0.11408261954784393,
+      "item_loss": 0.06001441180706024,
+      "family_loss": 0.2162727266550064
+    },
+    {
+      "epoch": 5,
+      "total_loss": 0.08273858577013016,
+      "item_loss": 0.04457616060972214,
+      "family_loss": 0.15264958143234253
+    },
+    {
+      "epoch": 6,
+      "total_loss": 0.07791883498430252,
+      "item_loss": 0.044511061161756516,
+      "family_loss": 0.1336308866739273
+    },
+    {
+      "epoch": 7,
+      "total_loss": 0.06310785561800003,
+      "item_loss": 0.036158107221126556,
+      "family_loss": 0.10779884457588196
+    },
+    {
+      "epoch": 8,
+      "total_loss": 0.057868145406246185,
+      "item_loss": 0.034008052200078964,
+      "family_loss": 0.0954403206706047
+    },
+    {
+      "epoch": 9,
+      "total_loss": 0.0493813119828701,
+      "item_loss": 0.02923111990094185,
+      "family_loss": 0.08060062676668167
+    },
+    {
+      "epoch": 10,
+      "total_loss": 0.041539181023836136,
+      "item_loss": 0.024192797020077705,
+      "family_loss": 0.06938552111387253
+    },
+    {
+      "epoch": 11,
+      "total_loss": 0.041646331548690796,
+      "item_loss": 0.02469477429986,
+      "family_loss": 0.06780610233545303
+    },
+    {
+      "epoch": 12,
+      "total_loss": 0.03381019085645676,
+      "item_loss": 0.019728265702724457,
+      "family_loss": 0.05632782727479935
+    },
+    {
+      "epoch": 13,
+      "total_loss": 0.03189386427402496,
+      "item_loss": 0.018566537648439407,
+      "family_loss": 0.053309328854084015
+    },
+    {
+      "epoch": 14,
+      "total_loss": 0.02932657115161419,
+      "item_loss": 0.017235545441508293,
+      "family_loss": 0.048364169895648956
+    },
+    {
+      "epoch": 15,
+      "total_loss": 0.025792259722948074,
+      "item_loss": 0.01493701059371233,
+      "family_loss": 0.04342091083526611
+    }
+  ],
+  "all_training_histories": {
+    "0.25": [
+      {
+        "epoch": 1,
+        "total_loss": 0.2608301043510437,
+        "item_loss": 0.1443534791469574,
+        "family_loss": 0.4659058153629303
+      },
+      {
+        "epoch": 2,
+        "total_loss": 0.17021693289279938,
+        "item_loss": 0.08217698335647583,
+        "family_loss": 0.3521594703197479
+      },
+      {
+        "epoch": 3,
+        "total_loss": 0.1345326155424118,
+        "item_loss": 0.0651990994811058,
+        "family_loss": 0.277334064245224
+      },
+      {
+        "epoch": 4,
+        "total_loss": 0.11408261954784393,
+        "item_loss": 0.06001441180706024,
+        "family_loss": 0.2162727266550064
+      },
+      {
+        "epoch": 5,
+        "total_loss": 0.08273858577013016,
+        "item_loss": 0.04457616060972214,
+        "family_loss": 0.15264958143234253
+      },
+      {
+        "epoch": 6,
+        "total_loss": 0.07791883498430252,
+        "item_loss": 0.044511061161756516,
+        "family_loss": 0.1336308866739273
+      },
+      {
+        "epoch": 7,
+        "total_loss": 0.06310785561800003,
+        "item_loss": 0.036158107221126556,
+        "family_loss": 0.10779884457588196
+      },
+      {
+        "epoch": 8,
+        "total_loss": 0.057868145406246185,
+        "item_loss": 0.034008052200078964,
+        "family_loss": 0.0954403206706047
+      },
+      {
+        "epoch": 9,
+        "total_loss": 0.0493813119828701,
+        "item_loss": 0.02923111990094185,
+        "family_loss": 0.08060062676668167
+      },
+      {
+        "epoch": 10,
+        "total_loss": 0.041539181023836136,
+        "item_loss": 0.024192797020077705,
+        "family_loss": 0.06938552111387253
+      },
+      {
+        "epoch": 11,
+        "total_loss": 0.041646331548690796,
+        "item_loss": 0.02469477429986,
+        "family_loss": 0.06780610233545303
+      },
+      {
+        "epoch": 12,
+        "total_loss": 0.03381019085645676,
+        "item_loss": 0.019728265702724457,
+        "family_loss": 0.05632782727479935
+      },
+      {
+        "epoch": 13,
+        "total_loss": 0.03189386427402496,
+        "item_loss": 0.018566537648439407,
+        "family_loss": 0.053309328854084015
+      },
+      {
+        "epoch": 14,
+        "total_loss": 0.02932657115161419,
+        "item_loss": 0.017235545441508293,
+        "family_loss": 0.048364169895648956
+      },
+      {
+        "epoch": 15,
+        "total_loss": 0.025792259722948074,
+        "item_loss": 0.01493701059371233,
+        "family_loss": 0.04342091083526611
+      }
+    ],
+    "0.5": [
+      {
+        "epoch": 1,
+        "total_loss": 0.3457229435443878,
+        "item_loss": 0.164646178483963,
+        "family_loss": 0.3621532618999481
+      },
+      {
+        "epoch": 2,
+        "total_loss": 0.20680610835552216,
+        "item_loss": 0.09792374074459076,
+        "family_loss": 0.2177647203207016
+      },
+      {
+        "epoch": 3,
+        "total_loss": 0.14253820478916168,
+        "item_loss": 0.07986291497945786,
+        "family_loss": 0.12535062432289124
+      },
+      {
+        "epoch": 4,
+        "total_loss": 0.1102542132139206,
+        "item_loss": 0.06924973428249359,
+        "family_loss": 0.08200912177562714
+      },
+      {
+        "epoch": 5,
+        "total_loss": 0.07987911254167557,
+        "item_loss": 0.050624143332242966,
+        "family_loss": 0.058509934693574905
+      },
+      {
+        "epoch": 6,
+        "total_loss": 0.07545045018196106,
+        "item_loss": 0.04724579676985741,
+        "family_loss": 0.05640925467014313
+      },
+      {
+        "epoch": 7,
+        "total_loss": 0.061969444155693054,
+        "item_loss": 0.03924315422773361,
+        "family_loss": 0.04545259848237038
+      },
+      {
+        "epoch": 8,
+        "total_loss": 0.05589162930846214,
+        "item_loss": 0.035278186202049255,
+        "family_loss": 0.04122694209218025
+      },
+      {
+        "epoch": 9,
+        "total_loss": 0.047475818544626236,
+        "item_loss": 0.03000268153846264,
+        "family_loss": 0.034946341067552567
+      },
+      {
+        "epoch": 10,
+        "total_loss": 0.041327014565467834,
+        "item_loss": 0.025461046025156975,
+        "family_loss": 0.03173193708062172
+      },
+      {
+        "epoch": 11,
+        "total_loss": 0.03972163423895836,
+        "item_loss": 0.02474936656653881,
+        "family_loss": 0.02994454652070999
+      },
+      {
+        "epoch": 12,
+        "total_loss": 0.03540467470884323,
+        "item_loss": 0.021749619394540787,
+        "family_loss": 0.02731015533208847
+      },
+      {
+        "epoch": 13,
+        "total_loss": 0.03315294161438942,
+        "item_loss": 0.020836975425481796,
+        "family_loss": 0.024631870910525322
+      },
+      {
+        "epoch": 14,
+        "total_loss": 0.028029892593622208,
+        "item_loss": 0.01749579980969429,
+        "family_loss": 0.02106820046901703
+      },
+      {
+        "epoch": 15,
+        "total_loss": 0.029059037566184998,
+        "item_loss": 0.0176070686429739,
+        "family_loss": 0.02290392853319645
+      }
+    ],
+    "1.0": [
+      {
+        "epoch": 1,
+        "total_loss": 0.4960024952888489,
+        "item_loss": 0.20174157619476318,
+        "family_loss": 0.29426074028015137
+      },
+      {
+        "epoch": 2,
+        "total_loss": 0.24446532130241394,
+        "item_loss": 0.12720631062984467,
+        "family_loss": 0.11725914478302002
+      },
+      {
+        "epoch": 3,
+        "total_loss": 0.15962375700473785,
+        "item_loss": 0.09894788265228271,
+        "family_loss": 0.06067591533064842
+      },
+      {
+        "epoch": 4,
+        "total_loss": 0.11738794296979904,
+        "item_loss": 0.08068117499351501,
+        "family_loss": 0.036706842482089996
+      },
+      {
+        "epoch": 5,
+        "total_loss": 0.08787322044372559,
+        "item_loss": 0.059235259890556335,
+        "family_loss": 0.02863791212439537
+      },
+      {
+        "epoch": 6,
+        "total_loss": 0.08056928962469101,
+        "item_loss": 0.054191701114177704,
+        "family_loss": 0.026377519592642784
+      },
+      {
+        "epoch": 7,
+        "total_loss": 0.0706653818488121,
+        "item_loss": 0.047040119767189026,
+        "family_loss": 0.023625275120139122
+      },
+      {
+        "epoch": 8,
+        "total_loss": 0.05928827449679375,
+        "item_loss": 0.04111584648489952,
+        "family_loss": 0.018172485753893852
+      },
+      {
+        "epoch": 9,
+        "total_loss": 0.05450408160686493,
+        "item_loss": 0.03554119914770126,
+        "family_loss": 0.018962865695357323
+      },
+      {
+        "epoch": 10,
+        "total_loss": 0.04927351325750351,
+        "item_loss": 0.031479544937610626,
+        "family_loss": 0.01779397390782833
+      },
+      {
+        "epoch": 11,
+        "total_loss": 0.04366167262196541,
+        "item_loss": 0.029104137793183327,
+        "family_loss": 0.01455752644687891
+      },
+      {
+        "epoch": 12,
+        "total_loss": 0.037792276591062546,
+        "item_loss": 0.024790329858660698,
+        "family_loss": 0.013001928105950356
+      },
+      {
+        "epoch": 13,
+        "total_loss": 0.036436647176742554,
+        "item_loss": 0.02302505075931549,
+        "family_loss": 0.013411600142717361
+      },
+      {
+        "epoch": 14,
+        "total_loss": 0.03468859940767288,
+        "item_loss": 0.022082189098000526,
+        "family_loss": 0.012606396339833736
+      },
+      {
+        "epoch": 15,
+        "total_loss": 0.02978263981640339,
+        "item_loss": 0.01911749877035618,
+        "family_loss": 0.01066514290869236
+      }
+    ]
+  },
+  "all_results": [
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 5
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "task2_baseline",
+      "run_mode": "full_sweep_fast",
+      "alpha": null,
+      "epochs": 0,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9998555183410645,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9997832775115967,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.25,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 0.9994926452636719,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 0.9994926452636719,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 0.9999277591705322,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 5
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 3
+    },
+    {
+      "model_name": "joint_triplet",
+      "run_mode": "full_sweep_fast",
+      "alpha": 1.0,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 5
+    }
+  ]
+}

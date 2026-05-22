@@ -1,0 +1,80 @@
+{
+  "mode": "deadline_safe",
+  "total_minutes": 45.11704421333319,
+  "cell_minutes": {
+    "5": 0.04362680499956089,
+    "6": 0.04332500666641863,
+    "7": 0.05306498666662567,
+    "8": 6.46666643054535e-06,
+    "9": 4.0699999469021956e-06,
+    "load_task2_model": 0.0019645983333854626,
+    "14": 0.011102431666707465,
+    "23": 0.10284860999963712,
+    "24": 2.3286666449469826e-05,
+    "25": 8.475506390000131,
+    "26": 9.965000208467245e-06,
+    "27": 36.387508288333386,
+    "28": 8.874999669690927e-06
+  },
+  "best_metadata": {
+    "run_mode": "deadline_safe",
+    "alpha": 0.5,
+    "k": 1,
+    "epochs": 15,
+    "gpu": "NVIDIA GeForce RTX 3080"
+  },
+  "best_result_bundle": [
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "deadline_safe"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "deadline_safe"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "deadline_safe"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "deadline_safe"
+    }
+  ]
+}

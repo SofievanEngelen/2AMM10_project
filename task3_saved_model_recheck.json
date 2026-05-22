@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "run_mode": "deadline_safe",
+    "alpha": 0.5,
+    "k": 1,
+    "epochs": 15,
+    "gpu": "NVIDIA GeForce RTX 3080"
+  },
+  "eval_minutes": 8.434081194999939,
+  "results": [
+    {
+      "model_name": "saved_task3_recheck",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "saved_task3_recheck",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "saved_task3_recheck",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "model_name": "saved_task3_recheck",
+      "alpha": 0.5,
+      "epochs": 15,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1
+    }
+  ],
+  "matches_deadline_safe_summary": true,
+  "all_accuracies_100": true,
+  "total_minutes": 8.717920524999984
+}

@@ -1,0 +1,86 @@
+{
+  "mode": "smoke",
+  "total_minutes": 70.06213060000009,
+  "cell_minutes": {
+    "5": 0.04127318000003773,
+    "6": 8.057175583333203,
+    "7": 0.1052666283333868,
+    "8": 1.3329999637790024e-05,
+    "9": 6.740000389982015e-06,
+    "11": 5.293333379086107e-06,
+    "14": 0.03517611833328071,
+    "15": 0.08706841666668576,
+    "16": 8.189999789465219e-06,
+    "17": 31.071698409999954,
+    "18": 7.013333379290998e-06,
+    "19": 5.603333314259847e-06,
+    "20": 11.277823226666563,
+    "23": 0.11158048999980869,
+    "24": 2.6369999977760018e-05,
+    "25": 8.838942058333487,
+    "26": 1.0331666271667927e-05,
+    "27": 10.436021764999897,
+    "28": 6.6133332438766955e-06
+  },
+  "best_metadata": {
+    "run_mode": "smoke",
+    "alpha": 0.5,
+    "k": 1,
+    "epochs": 1,
+    "gpu": "NVIDIA GeForce RTX 3080"
+  },
+  "best_result_bundle": [
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 1,
+      "scenario": "scenario_1_items_main",
+      "classification_level": "Items",
+      "task2_key": "scenario_1_items_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "smoke"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 1,
+      "scenario": "scenario_2_families_main",
+      "classification_level": "Families",
+      "task2_key": "scenario_2_families_main",
+      "n_support": 27678,
+      "n_test": 13843,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "smoke"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 1,
+      "scenario": "scenario_3_new_items",
+      "classification_level": "Items",
+      "task2_key": "scenario_3_new_items",
+      "n_support": 31622,
+      "n_test": 1971,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "smoke"
+    },
+    {
+      "model_name": "joint_triplet",
+      "alpha": 0.5,
+      "epochs": 1,
+      "scenario": "scenario_4_new_families",
+      "classification_level": "Families",
+      "task2_key": "scenario_4_new_families",
+      "n_support": 31909,
+      "n_test": 2119,
+      "accuracy": 1.0,
+      "k": 1,
+      "run_mode": "smoke"
+    }
+  ]
+}
